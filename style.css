@@ -172,7 +172,7 @@ section .title::after {
 
 .home {
   display: flex;
-  background: url("./images/images11.jpeg") no-repeat center;
+  background: url("./images/back1.jpg") no-repeat center;
   /* background-color: #111; */
   height: 100vh;
   color: rgba(225, 208, 218, 0.962);
@@ -518,16 +518,16 @@ background-size: 10px 10px;
   align-items: center;
 }
 .techStack {
-  color: purple;
+  color: rgb(202, 129, 11);
 }
 
 .demo-div a,
 .repo-div a,
 .repo-div a:link,
-.demo-div a:link,
-.techStack {
+.demo-div a:link
+ {
   text-decoration: none;
-  color: white;
+  color: rgb(16, 155, 125);
 }
 
 .project .carousel .card img {
