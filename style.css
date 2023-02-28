@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -74,6 +71,7 @@ header {
   background-color:#00aced;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
 }
+
 section {
   min-height: 100vh;
   padding: 2rem 9%;
@@ -122,9 +120,7 @@ header .navbar ul li a:hover {
   border-bottom: 0.2rem solid #011aff;
   padding: 0.5rem 0;
 }
-/* navbar ends */
 
-/* hamburger icon starts*/
 #menu {
   font-size: 3rem;
   cursor: pointer;
@@ -177,7 +173,7 @@ header .navbar ul li a:hover {
     right: 0;
   }
 }
-/* hamburger icon ends */
+
 
 /* hero section starts*/
 .home {
@@ -187,7 +183,7 @@ header .navbar ul li a:hover {
   gap: 1.5rem;
   min-height: 100vh;
   align-items: center;
-  background: rgb(103, 96, 87);
+  background: cornsilk;
 }
 .home #particles-js {
   position: absolute;
@@ -363,8 +359,8 @@ header .navbar ul li a:hover {
 }
 .about .row .image img {
   margin: 4rem;
-  width: 30rem;
-  height: auto;
+  width: 40rem;
+  height: 40rem;
   border-radius: 5%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
  /* mix-blend-mode: luminosity; */
@@ -380,13 +376,14 @@ header .navbar ul li a:hover {
 }
 .about .row .content h3 {
   color: rgb(27, 27, 27);
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  font-weight: 800;
 }
 .about .row .content .tag {
-  font-size: 1.4rem;
+  font-size: 3.4rem;
   color: #020133;
-  font-weight: 600;
-  margin-top: 1rem;
+  font-weight: 700;
+  margin-top: 18rem;
 }
 .about .row .content p {
   font-size: 1.5rem;
@@ -401,7 +398,7 @@ header .navbar ul li a:hover {
   flex-wrap: wrap;
   gap: 1.5rem;
   font-family: "Nunito";
-  font-size: 26px;
+  font-size: 56px;
   font-weight: 600;
 }
 .about .row .content .box-container .box p {
@@ -465,7 +462,7 @@ header .navbar ul li a:hover {
 /* skills section starts */
 .skills {
   min-height: 90vh;
-  background: linear-gradient(to bottom, #57059e, #4a00e0);
+  background:darkseagreen;
 }
 .skills h2 {
   color: #fff;
@@ -484,7 +481,7 @@ header .navbar ul li a:hover {
 }
 .skills .container .row {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   
   flex-wrap: wrap;
   gap: 1.8rem;
@@ -585,11 +582,10 @@ header .navbar ul li a:hover {
 /* skills media queries ends*/
 /* skills section ends */
 
-
-/* work section starts */
 .work {
   /* background: #010124; */
-  background: linear-gradient(to bottom, #000031, #00002c);
+  background: darkseagreen;
+  /* margin-top: -130px; */
 }
 .work h2 {
   color: #fff;
@@ -613,19 +609,19 @@ header .navbar ul li a:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
-  height: 40rem;
+  height: 60rem;
+  
 }
 .work .box-container .box img {
-  height: 100%;
-  width: 100%;
-  object-fit:contain;
+  height: 50%;
+  width: 100%;   
 }
+
 .work .box-container .box .content {
   height: 100%;
   width: 100%;
   position: absolute;
-  top: 85%;
-  left: 0;
+  top: 50%;
   background: rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: column;
@@ -643,12 +639,11 @@ header .navbar ul li a:hover {
 .work .box-container .box .content .tag h3 {
   font-size: 2rem;
 }
-.work .box-container .box:hover .content {
-  top: 25%;
-}
+
 .work .desc {
   margin: 2rem;
   display: flex;
+  line-height: 20px;
   flex-direction: column;
   justify-content: center;
 }
@@ -707,182 +702,9 @@ header .navbar ul li a:hover {
 .work .viewall .btn:hover i {
   transform: translateX(5px);
 }
-/* work section ends */
 
-/* experience section starts */
-.experience .timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.experience .timeline::after {
-  content: "";
-  position: absolute;
-  width: 6px;
-  background: #020133;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-  z-index: -2;
-}
-.experience .container {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-}
-/*circles on timeline*/
-.experience .container::after {
-  content: "\f0b1";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: rgb(255, 255, 255);
-  border: 4px solid #ff9f55;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 100;
-  font-size: 1.89rem;
-  text-align: center;
-  font-weight: 600;
-  color: #02094b;
-  font-family: "Font Awesome\ 5 Free";
-}
-.experience .left {
-  left: 0;
-}
-.experience .right {
-  left: 50%;
-}
-/* arrows pointing right */
-.experience .left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid #f68c09;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #f68c09;
-}
-/* arrows pointing left  */
-.experience .right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid #f68c09;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent #f68c09 transparent transparent;
-}
-.experience .right::after {
-  left: -16px;
-}
-.experience .content {
-  background-color: #f68c09;
-  position: relative;
-  border-radius: 6px;
-}
-.experience .content .tag {
-  font-size: 1.3rem;
-  padding-top: 1.5rem;
-  padding-left: 1.5rem;
-}
-.experience .content .desc {
-  margin-left: 1.5rem;
-  padding-bottom: 1rem;
-}
-.experience .content .desc h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-.experience .content .desc p {
-  font-size: 1.2rem;
-}
-/* view all button */
-.morebtn {
-  display: flex;
-  justify-content: center;
-}
-.morebtn .btn {
-  position: relative;
-  line-height: 0;
-  padding: 1.6rem 3rem;
-  border-radius: 0.5em;
-  transition: 0.5s;
-  color: #fff;
-  background: #2506ad;
-  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
-  text-align: center;
-}
-.morebtn .btn span {
-  font-weight: 600;
-  font-size: 1.7rem;
-  font-family: "Nunito", sans-serif;
-}
-.morebtn .btn i {
-  margin-left: 0.3rem;
-  font-size: 1.5rem;
-  transition: 0.3s;
-}
-.morebtn .btn:hover {
-  background: #1a047e;
-}
-.morebtn .btn:hover i {
-  transform: translateX(5px);
-}
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-  .experience {
-    min-height: 80vh;
-  }
-  .experience .timeline {
-    margin-top: 2rem;
-  }
-  .experience .timeline::after {
-    left: 31px;
-  }
-  .experience .container {
-    width: 100%;
-    padding-left: 8rem;
-    padding-right: 2rem;
-  }
-  .experience .container::after {
-    font-size: 2.2rem;
-  }
-  .experience .container::before {
-    left: 61px;
-    border: medium solid #f68c09;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent #f68c09 transparent transparent;
-  }
-  .experience .left::after {
-    left: 15px;
-  }
-  .experience .right::after {
-    left: 15px;
-  }
-  .experience .right {
-    left: 0%;
-  }
-  .morebtn {
-    margin-top: 3rem;
-  }
-}
-/* experience media queries ends */
-/* experience section ends */
-
-/* contact section starts */
 .contact {
-  background: #e5ecfb;
+  background:darkseagreen;
   min-height: 60vh;
 }
 .contact .container {
@@ -1164,7 +986,7 @@ form .button-area {
   padding: 1rem 1.5rem;
   font-size: 2rem;
   background: #ffae00;
-  color: rgb(13, 0, 44);
+  color: rgb(64, 2, 208);
   border-radius: 50%;
   transition: 1s linear;
   z-index: 1000;
@@ -1172,4 +994,46 @@ form .button-area {
 #scroll-top.active {
   top: calc(100% - 12rem);
 }
-/* scroll top ends */
+
+.ts{
+  color: #8432ef;
+  font-size: 15px;
+}
+
+.contrib-number {
+  font-weight: 1000;
+  font-size: min(1.25vw, 16px);
+  color: limegreen;
+}
+.calendar {
+  min-height: auto;
+  border-radius: 5px;
+
+  padding: 1%;
+}
+.text-muted {
+  font-size: min(1.25vw, 10px);
+}
+.float-right {
+  font-size: min(1.25vw, 10px);
+}
+.d-inline-block {
+  width: 1vw;
+  height: 1vw;
+}
+.contrib-column {
+  padding: 0px;
+}
+
+#calender1 {
+  
+  text-align: center;
+  background-color:darkseagreen ;
+  padding-top: 70px;
+}
+
+#calender1 > a {
+  text-decoration: none;
+}
+
+/* git claender customized css */
