@@ -73,6 +73,23 @@ $(document).ready(function () {
       },
     });
   }
+  else if (screen.width > 1000) {
+    $(".carousel").owlCarousel({
+      margin: 10,
+      loop: true,
+      autoplay: true,
+      autoplayTimeOut: 2000,
+      autoplayHoverPause: true,
+      responsive:
+      {
+        0: {
+          items: 4,
+          nav: false,
+        },
+
+      },
+    });
+  }
   else if (screen.width > 501 && screen.width <= 900) {
     $(".carousel").owlCarousel({
       margin: 15,

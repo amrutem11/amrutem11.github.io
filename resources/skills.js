@@ -49,20 +49,11 @@ let sk=()=>{
                 <p class="text">GitHub</p>
             </div>
 
-        //     <div class="skills-images">
-        //         <img src="resources/C.png" alt="">
-        //         <p class="text">C</p>
-        //     </div>
-        // </div>
+       
+        </div>
 
 
-        // <div class="column">
-
-        //     <div class="skills-images">
-        //         <img src="resources/C++.png" alt="">
-        //         <p class="text">C++</p>
-        //     </div>
-        // </div>
+       
     
     
     `;
@@ -116,15 +107,7 @@ return`
     </div>
 
     <div class="column">
-        <div class="skills-images">
-            <img src="resources/C.png" alt="">
-            <p class="text">C</p>
-        </div>
-
-        <div class="skills-images">
-            <img src="resources/C++.png" alt="">
-            <p class="text">C++</p>
-        </div>
+        
     </div>
 
 `;

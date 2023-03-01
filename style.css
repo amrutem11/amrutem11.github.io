@@ -743,13 +743,20 @@ margin: auto;
 
 
 /*  media query start */
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
 
   .navbar .logo a {
     margin-left: -20px;
     font-weight: 600;
   }
-
+  .project .btn a{
+    margin-left: 20px;
+    /* border: 1px solid red; */
+  }
+  .project .btn {
+    margin-left: -10px;
+    /* border: 1px solid red; */
+  }
 }
 
 @media (max-width: 1180px) {
@@ -831,6 +838,10 @@ margin: auto;
     font-size: 23px;
     line-height: 38px;
   }
+  .project .btn {
+    margin-left: -22px;
+    /* border: 1px solid red; */
+  }
 
 }
 
@@ -860,7 +871,14 @@ margin: auto;
     width: 88%;
     margin: auto;
   }
-
+  .project .btn a{
+    margin-left: 20px;
+    /* border: 1px solid red; */
+  }
+  .project .btn {
+    margin-left: -10px;
+    /* border: 1px solid red; */
+  }
 }
 
 @media (max-width: 1040px) {
@@ -874,6 +892,10 @@ margin: auto;
     font-size: 16px;
     margin-left: 15px;
 
+  }
+  .project .btn a{
+    margin-left: 20px;
+    /* border: 1px solid red; */
   }
 
   #github-readme-stats
@@ -904,7 +926,10 @@ margin: auto;
     margin-left: 13px;
 
   }
-
+  .project .btn a{
+    margin-left: 20px;
+    /* border: 1px solid red; */
+  }
 }
 
 @media (max-width: 991px) {
@@ -955,6 +980,10 @@ margin: auto;
     width: 35px;
     font-size: 23px;
     line-height: 38px;
+  }
+  .project .btn a{
+    margin-left: 20px;
+    /* border: 1px solid red; */
   }
 
 }
@@ -1135,6 +1164,12 @@ margin: auto;
     width: 85%;
     margin: auto;
   }
+  .project .btn a{
+    margin-left: 20px;
+    /* border: 1px solid red; */
+  }
+  
+  
 }
 
 
@@ -1153,8 +1188,14 @@ margin: auto;
     margin: auto;
   }
   #githubCommits {
-    width: 85%;
+    width: 100%;
     margin: auto;
+    margin-top: 10px;
+    /* border: 1px solid red; */
+  }
+  .project .btn a{
+    margin-left: 20px;
+    /* border: 1px solid red; */
   }
 }
 
@@ -1256,6 +1297,10 @@ margin: auto;
     padding: 10px;
     transition: transform .2s
   }
+  .project .btn a{
+    margin-left: 20px;
+    /* border: 1px solid red; */
+  }
   .git
   {
     display: grid;
@@ -1343,6 +1388,8 @@ margin: auto;
   {
     height: auto;
     align-items: center;
+    /* border: 1px solid black; */
+    margin-left: 20px;
   }
 
  .skills-images
@@ -1367,12 +1414,18 @@ margin: auto;
   .skills .skills-content .column {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    /* border: 1px solid red; */
+    margin-left: 10px;
+    /* margin-left: -40px; */
   }
 
   .skills .skills-content
   {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    
   }
   .skills .skills-content .skills-images .text {
     font-size: 16px;
@@ -1393,7 +1446,9 @@ margin: auto;
   .project .carousel .card 
   {
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2,1fr);
     border-radius: 10px;
     margin: auto;
     height: 650px;
@@ -1439,21 +1494,6 @@ margin: auto;
   }
 }
 
-@media (max-width: 380px) 
-{
-
-  #footer >a >img
-  {
-    width: 20px;
-    margin-bottom: 5px;
-  }
-  footer {
-    font-size: 85%;
-    
-  }
-
-}
-
 @media (max-width: 350px) 
 {
 
@@ -1491,20 +1531,26 @@ margin: auto;
   }
   .skills .skills-content .column {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    
+    /* border: 1px solid red; */
   }
   .skills .title::after {
     margin: -2px;
-    content: "what i know";
+    content: "what I know";
   }
 
   .proficiencies .title::after {
     margin: -2px;
-    content: "what i know";
+    content: "what I know";
   }
   .project .title::after {
     margin:-4px;
     content: "see my work";
+  }
+  .project .btn a{
+    margin-left: 20px;
+    /* border: 1px solid red; */
   }
   .contact .title::after {
     margin:-4px;
@@ -1534,8 +1580,6 @@ margin: auto;
     
   }
 
- 
-
   .individualStat > div:nth-child(1) {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
@@ -1550,10 +1594,10 @@ margin: auto;
 @media (max-width: 350px) 
 {
   #skills .skills-content .column{
-    /* display: grid;
-    grid-template-columns: repeat(1,1fr); */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     margin: auto;
-    margin-left: 50px;
+    /* margin-left: 50px; */
     
   }
   .skills-images{
@@ -1580,5 +1624,15 @@ margin: auto;
     height: 100%;
     padding-top: 30px;
   }
-
+  /* #carousel .card{
+    border: 1px solid red;
+    display:grid;
+    grid-template-rows: repeat(1,1fr);
+    gap: 10px;
+  }
+  .logo_image{
+    width: 50%;
+    margin: auto;
+    
+  } */
 }
