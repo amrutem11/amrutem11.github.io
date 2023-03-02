@@ -43,14 +43,14 @@ $(document).ready(function () {
   var typed = new Typed(".typing", {
     strings: ["Java  Developer", "Front-End Web Developer", "Full Stack Web Developer"],
     typeSpeed: 100,
-    backSpeed: 60,
+    backSpeed: 80,
     loop: true,
   });
 
   var typed = new Typed(".typing-2", {
     strings: ["Java  Developer", "Front-End Web Developer", "Full Stack Web Developer"],
     typeSpeed: 100,
-    backSpeed: 60,
+    backSpeed: 80,
     loop: true,
   });
 

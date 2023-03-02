@@ -647,7 +647,11 @@ margin: auto;
   height: 65px;
   align-items: center;
 }
-
+.contact .contact-content .row .info:hover{
+  background-color: #0ea596;
+  font-size: 20px;
+  text-decoration: underline;
+}
 .contact .contact-content .row .info {
   margin-left: 30px;
 }
